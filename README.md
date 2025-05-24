@@ -1,44 +1,98 @@
-# Archiflow
-ArchiFlow – A modern desktop application for architects to seamlessly access, visualize, and annotate digital blueprints. Built with C++ and Qt by DesignX.
-# ArchiFLow
-ArchiFlow – A modern desktop application for architects to seamlessly access, visualize, and annotate digital blueprints. Built with C++ and Qt by DesignX.
+# Material Management System
 
+A Qt 6 C++ application for managing materials inventory with a modern dark UI theme.
 
-# 🏛️ ArchiFlow by DesignX
+## Project Overview
 
-**ArchiFlow** is a modern, intuitive desktop application built for architects and design professionals to visualize, manage, and annotate their architectural plans and CAD documents. Developed with C++ and Qt, this software offers a seamless and offline-capable experience tailored for use in interactive kiosks or personal workstations.
+This Material Management System follows a clean, modular architecture using the Model-View-Controller (MVC) pattern. It provides functionality for material management, data visualization, and CSV import/export.
 
----
+## Features
 
-## 🚀 Features
+- **Material Management**: CRUD operations for materials (name, quantity, unit, price, description)
+- **Search and Filter**: Find materials by name, quantity, or price
+- **Data Visualization**: Bar charts for inventory levels and pie charts for value distribution
+- **CSV Import/Export**: Import and export material data
+- **Modern UI**: Dark-themed, responsive interface
 
-- 📂 Load architectural plans from a local database
-- ✍️ Annotate directly on blueprints (drawings, highlights)
-- 🖱️ Interactive interface: zoom, pan, reset view
-- 🔐 Data privacy and offline functionality
-- 🎯 Built for kiosk-like environments and professional use
+## Project Structure
 
----
+```
+/
+├── controllers/    # Controller classes for business logic
+├── database/       # Database management and SQL operations
+├── models/         # Data models and QSqlTableModel implementations
+├── ui/             # UI forms and view components
+├── utils/          # Utility classes and helper functions
+```
 
-## 🛠️ Built With
+## Technical Details
 
-- **Language**: C++
-- **Framework**: Qt (Widgets and GUI)
-- **IDE**: Qt Creator / Visual Studio Code
-- **Platform**: Desktop (Linux, Windows)
+- **Framework**: Qt 6 with Widgets, SQL, and Charts modules
+- **Database**: SQLite for local data storage
+- **Architecture**: Model-View-Controller (MVC) pattern
+- **C++ Standard**: C++17
 
----
-
-## 📦 Installation
+## Building the Project
 
 ### Prerequisites
 
-- Qt 6.x or higher
-- CMake (if not using Qt Creator)
-- C++ Compiler (e.g., g++, MSVC)
+- Qt 6.5 or higher
+- CMake 3.19 or higher
+- C++17 compatible compiler
 
-### Clone the Repo
+### Build Instructions
+
+1. Clone or download the repository
+2. Open a terminal/command prompt in the project directory
+3. Create a build directory and navigate to it:
 
 ```bash
-git clone https://github.com/designx-team/archiflow.git
-cd archiflow
+mkdir build
+cd build
+```
+
+4. Run CMake to configure the project:
+
+```bash
+cmake ..
+```
+
+5. Build the project:
+
+```bash
+cmake --build .
+```
+
+6. Run the application:
+
+```bash
+# On Windows
+Debug\Materials.exe
+
+# On macOS/Linux
+./Materials
+```
+
+## Development Phases
+
+### Phase 1: Project Setup ✅
+- Created Qt 6 Widgets Application
+- Set up folder structure
+- Initialized SQLite database with materials table
+- Added dark UI stylesheet
+
+### Phase 2: Material Management 🔄
+- Create QTableView with QSqlTableModel
+- Add form to add/edit/delete material
+- Implement filter/search fields
+
+### Phase 3: CSV Import/Export 🔄
+- Implement CSV import using QFile and QTextStream
+- Implement CSV export
+
+### Phase 4: Data Visualization 🔄
+- Use QtCharts to display bar and pie charts
+
+### Phase 5: UI Polish 🔄
+- Refactor layout and navigation
+- Apply consistent dark style to all widgets

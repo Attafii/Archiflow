@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Material Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Dark Theme Stylesheet for Material Management System */
+
+/* Global Application Style */
+QWidget {
+    background-color: #2A3340; /* Accent Dark */
+    color: #FFFFFF;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+}
+
+/* Main Window */
+QMainWindow {
+    background-color: #3D485A; /* Primary Dark */
+    border: none;
+}
+
+/* Menu Bar */
+QMenuBar {
+    background-color: #3D485A; /* Primary Dark */
+    color: #FFFFFF;
+    border-bottom: 1px solid #2A3340; /* Accent Dark */
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+QMenuBar::item:selected {
+    background-color: #2A3340; /* Accent Dark */
+    color: #E3C6B0; /* Primary Light */
+}
+
+/* Menu */
+QMenu {
+    background-color: #3D485A; /* Primary Dark */
+    border: 1px solid #2A3340; /* Accent Dark */
+    border-radius: 4px;
+}
+
+QMenu::item {
+    padding: 8px 20px 8px 20px;
+}
+
+QMenu::item:selected {
+    background-color: #2A3340; /* Accent Dark */
+    color: #E3C6B0; /* Primary Light */
+}
+
+/* Push Buttons */
+QPushButton {
+    background-color: #E3C6B0; /* Primary Light */
+    color: #2A3340; /* Accent Dark */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    min-width: 80px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #D4B7A1; /* Accent Light */
+}
+
+QPushButton:pressed {
+    background-color: #D4B7A1; /* Accent Light */
+}
+
+QPushButton:disabled {
+    background-color: #3D485A; /* Primary Dark */
+    color: #9D9D9D;
+}
+
+/* Status Colors for Buttons */
+QPushButton.error-button {
+    background-color: #FF6B6B; /* Error */
+    color: white;
+}
+
+QPushButton.success-button {
+    background-color: #4CAF50; /* Success */
+    color: white;
+}
+
+QPushButton.warning-button {
+    background-color: #FFA726; /* Warning */
+    color: white;
+}
+
+/* Line Edit */
+QLineEdit {
+    background-color: #2A3340; /* Accent Dark */
+    border: 1px solid #3D485A; /* Primary Dark */
+    border-radius: 4px;
+    padding: 8px;
+    color: #FFFFFF;
+}
+
+QLineEdit:focus {
+    border: 1px solid #E3C6B0; /* Primary Light */
+    background-color: #3D485A; /* Primary Dark */
+}
+
+QLineEdit:hover {
+    border: 1px solid #D4B7A1; /* Accent Light */
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #2A3340; /* Accent Dark */
+    border: 1px solid #3D485A; /* Primary Dark */
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 6em;
+    color: #FFFFFF;
+}
+
+QComboBox:on {
+    border: 1px solid #E3C6B0; /* Primary Light */
+}
+
+QComboBox:hover {
+    border: 1px solid #D4B7A1; /* Accent Light */
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left: 1px solid #3E3E42;
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/dropdown-arrow.png);
+}
+
+/* Spin Box */
+QSpinBox, QDoubleSpinBox {
+    background-color: #2A3340; /* Accent Dark */
+    border: 1px solid #3D485A; /* Primary Dark */
+    border-radius: 4px;
+    padding: 8px;
+    color: #FFFFFF;
+}
+
+QSpinBox:hover, QDoubleSpinBox:hover {
+    border: 1px solid #D4B7A1; /* Accent Light */
+}
+
+QSpinBox:focus, QDoubleSpinBox:focus {
+    border: 1px solid #E3C6B0; /* Primary Light */
+    background-color: #3D485A; /* Primary Dark */
+}
+
+QSpinBox::up-button, QDoubleSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 16px;
+    border-left: 1px solid #3E3E42;
+    border-bottom: 1px solid #3E3E42;
+}
+
+QSpinBox::down-button, QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 16px;
+    border-left: 1px solid #3E3E42;
+    border-top: 1px solid #3E3E42;
+}
+
+/* Text Edit */
+QTextEdit {
+    background-color: #2A3340; /* Accent Dark */
+    border: 1px solid #3D485A; /* Primary Dark */
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+QTextEdit:focus {
+    border: 1px solid #E3C6B0; /* Primary Light */
+    background-color: #3D485A; /* Primary Dark */
+}
+
+QTextEdit:hover {
+    border: 1px solid #D4B7A1; /* Accent Light */
+}
+
+/* Group Box */
+QGroupBox {
+    border: 1px solid #3D485A; /* Primary Dark */
+    border-radius: 6px;
+    margin-top: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+    background-color: #2A3340; /* Accent Dark */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #E3C6B0; /* Primary Light */
+    font-size: 11pt;
+}
+
+/* Table View */
+QTableView {
+    background-color: #2A3340; /* Accent Dark */
+    alternate-background-color: #3D485A; /* Primary Dark */
+    border: 1px solid #3D485A; /* Primary Dark */
+    gridline-color: #3D485A; /* Primary Dark */
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+QTableView::item:selected {
+    background-color: #E3C6B0; /* Primary Light */
+    color: #2A3340; /* Accent Dark */
+}
+
+QTableView::item:hover {
+    background-color: #D4B7A1; /* Accent Light */
+    color: #2A3340; /* Accent Dark */
+}
+
+QHeaderView::section {
+    background-color: #3D485A; /* Primary Dark */
+    padding: 8px;
+    border: 1px solid #2A3340; /* Accent Dark */
+    color: #E3C6B0; /* Primary Light */
+    font-weight: bold;
+}
+
+/* Scroll Bar - Modern Style */
+QScrollBar:vertical {
+    border: none;
+    background: #2A3340; /* Accent Dark */
+    width: 12px;
+    margin: 0px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #E3C6B0; /* Primary Light */
+    min-height: 30px;
+    border-radius: 6px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #2A3340; /* Accent Dark */
+    height: 12px;
+    margin: 0px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #E3C6B0; /* Primary Light */
+    min-width: 30px;
+    border-radius: 6px;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* Sidebar Navigation */
+#sidebarWidget {
+    background-color: #2A3340; /* Accent Dark */
+    border-right: 1px solid #3D485A; /* Primary Dark */
+}
+
+#sidebarWidget QPushButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    padding: 10px 15px;
+    font-weight: bold;
+    min-width: 150px;
+    border-left: 4px solid transparent;
+}
+
+#sidebarWidget QPushButton:hover {
+    background-color: #3D485A; /* Primary Dark */
+    border-left: 4px solid #D4B7A1; /* Accent Light */
+}
+
+#sidebarWidget QPushButton:checked {
+    background-color: #3D485A; /* Primary Dark */
+    border-left: 4px solid #E3C6B0; /* Primary Light */
+    color: #E3C6B0; /* Primary Light */
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="sidebarWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>180</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>180</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="logoLabel">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #3D485A; color: #E3C6B0; font-weight: bold;</string>
+         </property>
+         <property name="text">
+          <string>Materials</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnMaterials">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>  Materials</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/materials.svg</normaloff>:/icons/materials.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnDashboard">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>  Dashboard</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/dashboard.svg</normaloff>:/icons/dashboard.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="pageMaterials">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="groupBoxSearch">
+          <property name="title">
+           <string>Search and Filter</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="labelSearch">
+             <property name="text">
+              <string>Search:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEditSearch">
+             <property name="placeholderText">
+              <string>Enter search term...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelCategory">
+             <property name="text">
+              <string>Category:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBoxCategory">
+             <item>
+              <property name="text">
+               <string>All Categories</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonClearFilters">
+             <property name="text">
+              <string>Clear Filters</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSplitter" name="splitter">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <widget class="QTableView" name="tableViewMaterials">
+           <property name="alternatingRowColors">
+            <bool>true</bool>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+           </property>
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBoxMaterialDetails">
+           <property name="title">
+            <string>Material Details</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelId">
+              <property name="text">
+               <string>ID:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="lineEditId">
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelName">
+              <property name="text">
+               <string>Name:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="lineEditName"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="labelDescription">
+              <property name="text">
+               <string>Description:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QTextEdit" name="textEditDescription"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="labelCategory">
+              <property name="text">
+               <string>Category:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="comboBoxMaterialCategory"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="labelQuantity">
+              <property name="text">
+               <string>Quantity:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QSpinBox" name="spinBoxQuantity">
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>999999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="labelUnit">
+              <property name="text">
+               <string>Unit:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QComboBox" name="comboBoxUnit">
+              <item>
+               <property name="text">
+                <string>Piece</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Kg</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Liter</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Meter</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="labelPrice">
+              <property name="text">
+               <string>Price:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxPrice">
+              <property name="maximum">
+               <double>999999.989999999990687</double>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0" colspan="2">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QPushButton" name="pushButtonNew">
+                <property name="text">
+                 <string>New</string>
+                </property>
+                <property name="icon">
+                 <iconset theme="document-new"/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonSave">
+                <property name="text">
+                 <string>Save</string>
+                </property>
+                <property name="icon">
+                 <iconset theme="document-save"/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonDelete">
+                <property name="text">
+                 <string>Delete</string>
+                </property>
+                <property name="icon">
+                 <iconset theme="edit-delete"/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageDashboard">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="labelDashboardTitle">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Materials Dashboard</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSplitter" name="splitterCharts">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <widget class="QGroupBox" name="groupBoxQuantityChart">
+           <property name="title">
+            <string>Material Quantities</string>
+           </property>
+           <layout class="QVBoxLayout" name="chartQuantityLayout"/>
+          </widget>
+          <widget class="QGroupBox" name="groupBoxValueChart">
+           <property name="title">
+            <string>Value Distribution</string>
+           </property>
+           <layout class="QVBoxLayout" name="chartValueLayout"/>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNewMaterial"/>
+    <addaction name="separator"/>
+    <addaction name="actionImportMaterials"/>
+    <addaction name="actionExportMaterials"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNewMaterial">
+   <property name="text">
+    <string>New Material</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionImportMaterials">
+   <property name="text">
+    <string>Import Materials...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/import.svg</normaloff>:/icons/import.svg</iconset>
+   </property>
+  </action>
+  <action name="actionExportMaterials">
+   <property name="text">
+    <string>Export Materials...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/export.svg</normaloff>:/icons/export.svg</iconset>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

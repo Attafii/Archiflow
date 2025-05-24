@@ -1,0 +1,13 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file>utils/style.qss</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/barcode.svg</file>
+        <file>icons/materials.svg</file>
+        <file>icons/dashboard.svg</file>
+        <file>icons/import.svg</file>
+        <file>icons/export.svg</file>
+    </qresource>
+</RCC>

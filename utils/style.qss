@@ -1,0 +1,240 @@
+/* Dark Theme Stylesheet for Material Management System */
+
+/* Global Application Style */
+QWidget {
+    background-color: #2D2D30;
+    color: #FFFFFF;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+}
+
+/* Main Window */
+QMainWindow {
+    background-color: #1E1E1E;
+    border: none;
+}
+
+/* Menu Bar */
+QMenuBar {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border-bottom: 1px solid #3E3E40;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+QMenuBar::item:selected {
+    background-color: #3E3E42;
+}
+
+/* Menu */
+QMenu {
+    background-color: #1E1E1E;
+    border: 1px solid #3E3E40;
+}
+
+QMenu::item {
+    padding: 5px 20px 5px 20px;
+}
+
+QMenu::item:selected {
+    background-color: #3E3E42;
+}
+
+/* Push Buttons */
+QPushButton {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 2px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #1C97EA;
+}
+
+QPushButton:pressed {
+    background-color: #00559B;
+}
+
+QPushButton:disabled {
+    background-color: #3E3E42;
+    color: #9D9D9D;
+}
+
+/* Line Edit */
+QLineEdit {
+    background-color: #333337;
+    border: 1px solid #3E3E42;
+    border-radius: 2px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+QLineEdit:focus {
+    border: 1px solid #0078D7;
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #333337;
+    border: 1px solid #3E3E42;
+    border-radius: 2px;
+    padding: 5px;
+    min-width: 6em;
+    color: #FFFFFF;
+}
+
+QComboBox:on {
+    border: 1px solid #0078D7;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left: 1px solid #3E3E42;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #1E1E1E;
+    border: 1px solid #3E3E42;
+    selection-background-color: #0078D7;
+}
+
+/* Spin Box */
+QSpinBox, QDoubleSpinBox {
+    background-color: #333337;
+    border: 1px solid #3E3E42;
+    border-radius: 2px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+QSpinBox:focus, QDoubleSpinBox:focus {
+    border: 1px solid #0078D7;
+}
+
+/* Table View */
+QTableView {
+    background-color: #252526;
+    alternate-background-color: #2D2D30;
+    border: 1px solid #3E3E42;
+    gridline-color: #3E3E42;
+    color: #FFFFFF;
+}
+
+QTableView::item:selected {
+    background-color: #0078D7;
+    color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    padding: 5px;
+    border: 1px solid #3E3E42;
+}
+
+/* Tab Widget */
+QTabWidget::pane {
+    border: 1px solid #3E3E42;
+    background-color: #2D2D30;
+}
+
+QTabBar::tab {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #3E3E42;
+    border-bottom: none;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: #2D2D30;
+    border-bottom: 2px solid #0078D7;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #3E3E42;
+}
+
+/* Scroll Bar */
+QScrollBar:vertical {
+    background-color: #1E1E1E;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #3E3E42;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #0078D7;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    background-color: #1E1E1E;
+    height: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #3E3E42;
+    min-width: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #0078D7;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* Group Box */
+QGroupBox {
+    border: 1px solid #3E3E42;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    padding: 0 5px 0 5px;
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border-top: 1px solid #3E3E42;
+}
+
+/* Tool Tip */
+QToolTip {
+    background-color: #2D2D30;
+    color: #FFFFFF;
+    border: 1px solid #3E3E42;
+    padding: 5px;
+}
