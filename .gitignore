@@ -1,0 +1,36 @@
+# Qt build artifacts
+build/
+*.o
+*.exe
+*.dll
+*.pdb
+*.exp
+*.lib
+*.ilk
+
+# Qt Creator files
+*.pro.user
+*.pro.user.*
+
+# Temporary Qt files
+*.tmp
+*.bak
+*~
+
+# Environment and config files with secrets
+.env
+config.ini
+secrets.txt
+
+# Debug files
+*.log
+debug/
+release/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
