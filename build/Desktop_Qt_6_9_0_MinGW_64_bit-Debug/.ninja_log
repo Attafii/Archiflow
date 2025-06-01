@@ -1,0 +1,31 @@
+# ninja log v6
+384	5929	7691840410875558	CMakeFiles/ContractManagementApp.dir/chatbotmanager.cpp.obj	94259de465efaa77
+32	372	7691840407343440	ContractManagementApp_autogen/timestamp	48f1634d353f83be
+32	372	7691840407343440	ContractManagementApp_autogen/mocs_compilation.cpp	48f1634d353f83be
+32	372	7691840407343440	C:/Users/Ahmed Attafi/Documents/ContractManagementApp/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ContractManagementApp_autogen/timestamp	48f1634d353f83be
+374	9318	7691840410775267	CMakeFiles/ContractManagementApp.dir/mainwindow.cpp.obj	d5f0d7100736ca22
+32	372	7691840407343440	C:/Users/Ahmed Attafi/Documents/ContractManagementApp/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ContractManagementApp_autogen/mocs_compilation.cpp	48f1634d353f83be
+1846	10499	7691835678278937	CMakeFiles/ContractManagementApp.dir/main.cpp.obj	b0ae824cf25f3e06
+1841	11410	7691835678215175	CMakeFiles/ContractManagementApp.dir/ContractManagementApp_autogen/mocs_compilation.cpp.obj	aaf2ff880a08b3f
+9318	10615	7691840500215975	ContractManagementApp.exe	1c70f61cf2a6ebe
+15	58	7691834208318403	CMakeFiles/clean.additional	baedbe210acaa455
+59	70	7691834208781415	clean	577b940aee94fbd7
+1864	9491	7691835678457388	CMakeFiles/ContractManagementApp.dir/databasemanager.cpp.obj	732548087cc2ac38
+378	7798	7691840410816667	CMakeFiles/ContractManagementApp.dir/statisticsdialog.cpp.obj	843a30d1167a2014
+1870	9789	7691835678518401	CMakeFiles/ContractManagementApp.dir/chatwindow.cpp.obj	500e8f33dc4752af
+27	385	7691845431497323	ContractManagementApp_autogen/timestamp	48f1634d353f83be
+27	385	7691845431497323	ContractManagementApp_autogen/mocs_compilation.cpp	48f1634d353f83be
+27	385	7691845431497323	C:/Users/Ahmed Attafi/Documents/ContractManagementApp/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ContractManagementApp_autogen/timestamp	48f1634d353f83be
+27	385	7691845431497323	C:/Users/Ahmed Attafi/Documents/ContractManagementApp/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ContractManagementApp_autogen/mocs_compilation.cpp	48f1634d353f83be
+397	5094	7691845435195122	CMakeFiles/ContractManagementApp.dir/chatbotmanager.cpp.obj	94259de465efaa77
+392	6513	7691845435142564	CMakeFiles/ContractManagementApp.dir/statisticsdialog.cpp.obj	843a30d1167a2014
+387	7807	7691845435082261	CMakeFiles/ContractManagementApp.dir/mainwindow.cpp.obj	d5f0d7100736ca22
+7807	9034	7691845509296356	ContractManagementApp.exe	1c70f61cf2a6ebe
+23	373	7691849678159741	ContractManagementApp_autogen/timestamp	48f1634d353f83be
+23	373	7691849678159741	ContractManagementApp_autogen/mocs_compilation.cpp	48f1634d353f83be
+23	373	7691849678159741	C:/Users/Ahmed Attafi/Documents/ContractManagementApp/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ContractManagementApp_autogen/timestamp	48f1634d353f83be
+23	373	7691849678159741	C:/Users/Ahmed Attafi/Documents/ContractManagementApp/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ContractManagementApp_autogen/mocs_compilation.cpp	48f1634d353f83be
+382	7253	7691849681801946	CMakeFiles/ContractManagementApp.dir/chatwindow.cpp.obj	500e8f33dc4752af
+378	8211	7691849681719547	CMakeFiles/ContractManagementApp.dir/statisticsdialog.cpp.obj	843a30d1167a2014
+374	9877	7691849681719547	CMakeFiles/ContractManagementApp.dir/mainwindow.cpp.obj	d5f0d7100736ca22
+9877	11390	7691849776756393	ContractManagementApp.exe	1c70f61cf2a6ebe

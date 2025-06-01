@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Contract Management System</string>
+  </property>
+  <widget class="QToolBar" name="toolBar"/>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralwidget { background-color: #3D485A; }
+QLabel { color: #E3C6B0; font-family: 'Poppins'; }
+QTableWidget { background-color: white; border-radius: 5px; color: black; }
+QPushButton { background-color: #E3C6B0; color: #3D485A; border-radius: 5px; padding: 5px 15px; font-weight: bold; }
+QPushButton:hover { background-color: #C4A491; }
+QLineEdit, QDateEdit, QDoubleSpinBox, QComboBox, QTextEdit { background-color: white; border-radius: 3px; padding: 3px; color: black; }</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="filterLayout">
+      <item>
+       <layout class="QHBoxLayout" name="searchLayout">
+        <item>
+         <widget class="QLabel" name="searchLabel">
+          <property name="text">
+           <string>Search:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="searchLineEdit">
+          <property name="placeholderText">
+           <string>Enter contract number, client name or description...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="dateFilterLayout">
+        <item>
+         <widget class="QLabel" name="startDateFilterLabel">
+          <property name="text">
+           <string>Start Date:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="startDateFilter">
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="endDateFilterLabel">
+          <property name="text">
+           <string>End Date:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="endDateFilter">
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="valueFilterLayout">
+        <item>
+         <widget class="QLabel" name="minValueLabel">
+          <property name="text">
+           <string>Min Value:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="minValueSpinBox">
+          <property name="prefix">
+           <string>$</string>
+          </property>
+          <property name="decimals">
+           <number>2</number>
+          </property>
+          <property name="maximum">
+           <double>999999999.99</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="maxValueLabel">
+          <property name="text">
+           <string>Max Value:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="maxValueSpinBox">
+          <property name="prefix">
+           <string>$</string>
+          </property>
+          <property name="decimals">
+           <number>2</number>
+          </property>
+          <property name="maximum">
+           <double>999999999.99</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="statusFilterLayout">
+        <item>
+         <widget class="QComboBox" name="filterComboBox">
+          <item>
+           <property name="text">
+            <string>All Contracts</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Active Contracts</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Expired Contracts</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pending Approval</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="mainLayout">
+      <item>
+       <layout class="QVBoxLayout" name="tableLayout">
+        <item>
+         <widget class="QTableWidget" name="contractTableWidget">
+          <column>
+           <property name="text">
+            <string>Contract ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Client Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Start Date</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>End Date</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Value</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="buttonLayout">
+          <item>
+           <widget class="QPushButton" name="addButton">
+            <property name="text">
+             <string>New Contract</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="editButton">
+            <property name="text">
+             <string>Edit Contract</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteButton">
+            <property name="text">
+             <string>Delete Contract</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="exportPdfButton">
+            <property name="text">
+             <string>Export PDF</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="statisticsButton">
+            <property name="text">
+             <string>Statistics</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="detailsGroupBox">
+        <property name="title">
+         <string>Contract Details</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="contractIdLabel">
+           <property name="text">
+            <string>Contract ID:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="contractIdLineEdit"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="clientNameLabel">
+           <property name="text">
+            <string>Client Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="clientNameLineEdit"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="startDateLabel">
+           <property name="text">
+            <string>Start Date:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDateEdit" name="startDateEdit"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="endDateLabel">
+           <property name="text">
+            <string>End Date:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QDateEdit" name="endDateEdit"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="valueLabel">
+           <property name="text">
+            <string>Contract Value:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QDoubleSpinBox" name="valueSpinBox">
+           <property name="maximum">
+            <double>999999999.99</double>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="statusLabel">
+           <property name="text">
+            <string>Status:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QComboBox" name="statusComboBox">
+           <item>
+            <property name="text">
+             <string>Draft</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Pending Approval</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Active</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Completed</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Terminated</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="descriptionLabel">
+           <property name="text">
+            <string>Description:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QTextEdit" name="descriptionTextEdit"/>
+         </item>
+         <item row="7" column="0" colspan="2">
+          <widget class="QPushButton" name="saveButton">
+           <property name="text">
+            <string>Save Changes</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExport"/>
+    <addaction name="actionExportPdf"/>
+    <addaction name="actionImport"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuReports">
+    <property name="title">
+     <string>Reports</string>
+    </property>
+    <addaction name="actionContractList"/>
+    <addaction name="actionExpiringContracts"/>
+    <addaction name="actionValueSummary"/>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExport">
+   <property name="text">
+    <string>Export Contracts</string>
+   </property>
+  </action>
+  <action name="actionExportPdf">
+   <property name="text">
+    <string>Export PDF</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import Contracts</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionContractList">
+   <property name="text">
+    <string>Contract List</string>
+   </property>
+  </action>
+  <action name="actionExpiringContracts">
+   <property name="text">
+    <string>Expiring Contracts</string>
+   </property>
+  </action>
+  <action name="actionValueSummary">
+   <property name="text">
+    <string>Value Summary</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
