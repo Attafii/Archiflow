@@ -1,0 +1,11 @@
+client_name,start_date,end_date,value,status,description
+ABC Corporation,2025-01-15,2026-01-15,50000.00,Active,Software development contract
+XYZ Ltd,2025-02-01,2025-12-31,25000.00,Draft,Consulting services agreement
+Tech Solutions Inc,2025-03-01,2027-03-01,75000.00,Active,Long-term support contract
+Global Enterprises,2025-04-01,2026-04-01,30000.00,Active,Marketing campaign management
+Innovation Corp,2025-05-15,2025-11-15,15000.00,Draft,Research and development project
+DataTech LLC,2025-06-01,2027-06-01,100000.00,Active,Data analytics platform
+StartupX,2025-07-01,2026-01-01,20000.00,Active,Web application development
+MegaCorp Industries,2025-08-01,2028-08-01,150000.00,Active,Enterprise software solution
+CloudServices Inc,2025-09-01,2026-09-01,45000.00,Draft,Cloud migration services
+FinTech Solutions,2025-10-01,2026-10-01,60000.00,Active,Financial software development

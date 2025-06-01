@@ -45,7 +45,8 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "",
         "on_editButton_clicked",
         "on_deleteButton_clicked",
-        "openChatWindow",
+        "openChatbotDialog",
+        "openCsvImportDialog",
         "on_saveButton_clicked",
         "on_statisticsButton_clicked",
         "on_contractTableWidget_itemClicked",
@@ -69,34 +70,36 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_deleteButton_clicked'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'openChatWindow'
+        // Slot 'openChatbotDialog'
         QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_saveButton_clicked'
+        // Slot 'openCsvImportDialog'
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_statisticsButton_clicked'
+        // Slot 'on_saveButton_clicked'
         QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_statisticsButton_clicked'
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_contractTableWidget_itemClicked'
-        QtMocHelpers::SlotData<void(QTableWidgetItem *)>(8, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { 0x80000000 | 9, 10 },
+        QtMocHelpers::SlotData<void(QTableWidgetItem *)>(9, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 10, 11 },
         }}),
         // Slot 'on_searchLineEdit_textChanged'
-        QtMocHelpers::SlotData<void(const QString &)>(11, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::QString, 12 },
+        QtMocHelpers::SlotData<void(const QString &)>(12, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 13 },
         }}),
         // Slot 'on_filterComboBox_currentIndexChanged'
-        QtMocHelpers::SlotData<void(int)>(13, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::Int, 14 },
+        QtMocHelpers::SlotData<void(int)>(14, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 15 },
         }}),
         // Slot 'on_actionContractList_triggered'
-        QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_actionExpiringContracts_triggered'
         QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_actionValueSummary_triggered'
+        // Slot 'on_actionExpiringContracts_triggered'
         QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_exportPdfButton_clicked'
+        // Slot 'on_actionValueSummary_triggered'
         QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_actionExportPdf_triggered'
+        // Slot 'on_exportPdfButton_clicked'
         QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionExportPdf_triggered'
+        QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -123,17 +126,18 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->on_addButton_clicked(); break;
         case 1: _t->on_editButton_clicked(); break;
         case 2: _t->on_deleteButton_clicked(); break;
-        case 3: _t->openChatWindow(); break;
-        case 4: _t->on_saveButton_clicked(); break;
-        case 5: _t->on_statisticsButton_clicked(); break;
-        case 6: _t->on_contractTableWidget_itemClicked((*reinterpret_cast< std::add_pointer_t<QTableWidgetItem*>>(_a[1]))); break;
-        case 7: _t->on_searchLineEdit_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 8: _t->on_filterComboBox_currentIndexChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 9: _t->on_actionContractList_triggered(); break;
-        case 10: _t->on_actionExpiringContracts_triggered(); break;
-        case 11: _t->on_actionValueSummary_triggered(); break;
-        case 12: _t->on_exportPdfButton_clicked(); break;
-        case 13: _t->on_actionExportPdf_triggered(); break;
+        case 3: _t->openChatbotDialog(); break;
+        case 4: _t->openCsvImportDialog(); break;
+        case 5: _t->on_saveButton_clicked(); break;
+        case 6: _t->on_statisticsButton_clicked(); break;
+        case 7: _t->on_contractTableWidget_itemClicked((*reinterpret_cast< std::add_pointer_t<QTableWidgetItem*>>(_a[1]))); break;
+        case 8: _t->on_searchLineEdit_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 9: _t->on_filterComboBox_currentIndexChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 10: _t->on_actionContractList_triggered(); break;
+        case 11: _t->on_actionExpiringContracts_triggered(); break;
+        case 12: _t->on_actionValueSummary_triggered(); break;
+        case 13: _t->on_exportPdfButton_clicked(); break;
+        case 14: _t->on_actionExportPdf_triggered(); break;
         default: ;
         }
     }
@@ -158,14 +162,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 14)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 14;
+        _id -= 15;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 14)
+        if (_id < 15)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 14;
+        _id -= 15;
     }
     return _id;
 }

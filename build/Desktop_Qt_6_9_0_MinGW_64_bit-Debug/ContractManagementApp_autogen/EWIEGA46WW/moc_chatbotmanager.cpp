@@ -45,6 +45,7 @@ template <> constexpr inline auto ChatbotManager::qt_create_metaobjectdata<qt_me
         "response",
         "errorOccurred",
         "error",
+        "databaseChanged",
         "handleApiResponse",
         "QNetworkReply*",
         "reply"
@@ -59,9 +60,11 @@ template <> constexpr inline auto ChatbotManager::qt_create_metaobjectdata<qt_me
         QtMocHelpers::SignalData<void(const QString &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 5 },
         }}),
+        // Signal 'databaseChanged'
+        QtMocHelpers::SignalData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'handleApiResponse'
-        QtMocHelpers::SlotData<void(QNetworkReply *)>(6, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { 0x80000000 | 7, 8 },
+        QtMocHelpers::SlotData<void(QNetworkReply *)>(7, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 8, 9 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -88,14 +91,15 @@ void ChatbotManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         switch (_id) {
         case 0: _t->responseReady((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 1: _t->errorOccurred((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->handleApiResponse((*reinterpret_cast< std::add_pointer_t<QNetworkReply*>>(_a[1]))); break;
+        case 2: _t->databaseChanged(); break;
+        case 3: _t->handleApiResponse((*reinterpret_cast< std::add_pointer_t<QNetworkReply*>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
         default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-        case 2:
+        case 3:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 0:
@@ -108,6 +112,8 @@ void ChatbotManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         if (QtMocHelpers::indexOfMethod<void (ChatbotManager::*)(const QString & )>(_a, &ChatbotManager::responseReady, 0))
             return;
         if (QtMocHelpers::indexOfMethod<void (ChatbotManager::*)(const QString & )>(_a, &ChatbotManager::errorOccurred, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (ChatbotManager::*)()>(_a, &ChatbotManager::databaseChanged, 2))
             return;
     }
 }
@@ -131,14 +137,14 @@ int ChatbotManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }
@@ -153,5 +159,11 @@ void ChatbotManager::responseReady(const QString & _t1)
 void ChatbotManager::errorOccurred(const QString & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1);
+}
+
+// SIGNAL 2
+void ChatbotManager::databaseChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 QT_WARNING_POP

@@ -21,6 +21,7 @@ public:
 signals:
     void responseReady(const QString &response);
     void errorOccurred(const QString &error);
+    void databaseChanged(); // Signal when database is modified
 
 private slots:
     void handleApiResponse(QNetworkReply *reply);
@@ -42,6 +43,14 @@ private:
     void updatePaymentTerms(const QString &contractId, int days);
     void addNonCompeteClause(const QString &contractId);
     void parseAndExecuteCommand(const QString &apiResponse, const QString &contractId);
+
+    // Database operation methods
+    void createContract(const QJsonObject &jsonObj);
+    void updateContractField(const QJsonObject &jsonObj, const QString &contractId);
+    void deleteContract(const QJsonObject &jsonObj);
+    void searchContracts(const QJsonObject &jsonObj);
+    void getContractStatistics();
+    void getExpiringContracts(const QJsonObject &jsonObj);
 };
 
 #endif // CHATBOTMANAGER_H

@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "chatbotmanager.h"
+#include "csvimportdialog.h"
 #include <QMessageBox>
 #include <QLocale>
 #include <QDate>
@@ -65,13 +67,18 @@ void MainWindow::setupDateEdits()
     ui->endDateEdit->setCalendarPopup(true);
     ui->startDateEdit->setDate(QDate::currentDate());
     ui->endDateEdit->setDate(QDate::currentDate().addYears(1));
-
-    // Ajouter le bouton de chat
-    QPushButton* chatButton = new QPushButton("Chat", this);
-    chatButton->setStyleSheet("QPushButton { background-color: #2196F3; color: white; border-radius: 5px; padding: 5px 15px; }");
-    ui->toolBar->addWidget(chatButton);
     
-    connect(chatButton, &QPushButton::clicked, this, &MainWindow::openChatWindow);
+    // Add chat button
+    QPushButton* chatButton = new QPushButton("💬 AI Assistant", this);
+    chatButton->setStyleSheet("QPushButton { background-color: #3D485A; color: #E3C6B0; border-radius: 8px; padding: 8px 16px; font-weight: bold; } QPushButton:hover { background-color: #4A5568; }");
+    ui->toolBar->addWidget(chatButton);
+    connect(chatButton, &QPushButton::clicked, this, &MainWindow::openChatbotDialog);
+    
+    // Add import button
+    QPushButton* importButton = new QPushButton("📊 Import Contracts", this);
+    importButton->setStyleSheet("QPushButton { background-color: #E3C6B0; color: #3D485A; border-radius: 8px; padding: 8px 16px; font-weight: bold; } QPushButton:hover { background-color: #C4A491; }");
+    ui->toolBar->addWidget(importButton);
+    connect(importButton, &QPushButton::clicked, this, &MainWindow::openCsvImportDialog);
 }
 
 void MainWindow::on_addButton_clicked()
@@ -200,11 +207,28 @@ void MainWindow::exportContractsToPdf()
     QMessageBox::information(this, tr("PDF Export"), tr("Contracts have been successfully exported to PDF."));
 }
 
-void MainWindow::openChatWindow()
+void MainWindow::openChatbotDialog()
 {
-    ChatWindow* chatWindow = new ChatWindow(dbManager, this);
-    chatWindow->setAttribute(Qt::WA_DeleteOnClose);
-    chatWindow->show();
+    ChatbotManager* chatbotManager = new ChatbotManager(dbManager, this);
+    
+    // Connect the database change signal to refresh the main window
+    connect(chatbotManager, &ChatbotManager::databaseChanged, 
+            this, &MainWindow::loadContractsFromDatabase);
+    
+    ChatbotDialog* chatbotDialog = new ChatbotDialog(chatbotManager, this);
+    chatbotDialog->setAttribute(Qt::WA_DeleteOnClose);
+    chatbotDialog->exec(); // Use exec() for modal dialog
+}
+
+void MainWindow::openCsvImportDialog()
+{
+    CsvImportDialog* csvDialog = new CsvImportDialog(dbManager, this);
+    
+    // Connect to refresh the main window after import
+    connect(csvDialog, &QDialog::accepted, this, &MainWindow::loadContractsFromDatabase);
+    
+    csvDialog->setAttribute(Qt::WA_DeleteOnClose);
+    csvDialog->exec();
 }
 
 void MainWindow::on_deleteButton_clicked()

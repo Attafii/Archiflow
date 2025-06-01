@@ -7,7 +7,8 @@
 #include <QTimer>
 #include "databasemanager.h"
 #include "statisticsdialog.h"
-#include "chatwindow.h"
+#include "chatbotdialog.h"
+#include "csvimportdialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,11 +22,10 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void on_addButton_clicked();
-    void on_editButton_clicked();
+private slots:    void on_addButton_clicked();    void on_editButton_clicked();
     void on_deleteButton_clicked();
-    void openChatWindow();
+    void openChatbotDialog();
+    void openCsvImportDialog();
     void on_saveButton_clicked();
     void on_statisticsButton_clicked();
     void on_contractTableWidget_itemClicked(QTableWidgetItem *item);

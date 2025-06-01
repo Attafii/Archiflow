@@ -20,6 +20,10 @@ qt_add_executable(ContractManagementApp
     chatwindow.h
     chatbotmanager.cpp
     chatbotmanager.h
+    chatbotdialog.cpp
+    chatbotdialog.h
+    csvimportdialog.cpp
+    csvimportdialog.h
 )
 
 target_link_libraries(ContractManagementApp

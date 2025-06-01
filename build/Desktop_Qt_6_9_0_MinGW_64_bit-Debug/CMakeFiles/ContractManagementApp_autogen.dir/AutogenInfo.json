@@ -452,6 +452,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/chatbotdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_chatbotdialog.cpp",
+			null
+		],
+		[
 			"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/chatbotmanager.h",
 			"MU",
 			"EWIEGA46WW/moc_chatbotmanager.cpp",
@@ -461,6 +467,12 @@
 			"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/chatwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_chatwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/csvimportdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_csvimportdialog.cpp",
 			null
 		],
 		[
@@ -565,12 +577,22 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/chatbotdialog.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/chatbotmanager.cpp",
 			"MU",
 			null
 		],
 		[
 			"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/chatwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/csvimportdialog.cpp",
 			"MU",
 			null
 		],

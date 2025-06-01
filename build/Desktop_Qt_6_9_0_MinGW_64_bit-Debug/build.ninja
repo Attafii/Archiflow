@@ -105,6 +105,22 @@ build CMakeFiles/ContractManagementApp.dir/chatbotmanager.cpp.obj: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles\ContractManagementApp.dir
   OBJECT_FILE_DIR = CMakeFiles\ContractManagementApp.dir
 
+build CMakeFiles/ContractManagementApp.dir/chatbotdialog.cpp.obj: CXX_COMPILER__ContractManagementApp_unscanned_Debug C$:/Users/Ahmed$ Attafi/Documents/ContractManagementApp/chatbotdialog.cpp || cmake_object_order_depends_target_ContractManagementApp
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ContractManagementApp.dir\chatbotdialog.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ContractManagementApp_autogen/include" -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui -isystem C:/Qt/6.9.0/mingw_64/include/QtSql -isystem C:/Qt/6.9.0/mingw_64/include/QtCharts -isystem C:/Qt/6.9.0/mingw_64/include/QtOpenGL -isystem C:/Qt/6.9.0/mingw_64/include/QtOpenGLWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtPrintSupport -isystem C:/Qt/6.9.0/mingw_64/include/QtNetwork
+  OBJECT_DIR = CMakeFiles\ContractManagementApp.dir
+  OBJECT_FILE_DIR = CMakeFiles\ContractManagementApp.dir
+
+build CMakeFiles/ContractManagementApp.dir/csvimportdialog.cpp.obj: CXX_COMPILER__ContractManagementApp_unscanned_Debug C$:/Users/Ahmed$ Attafi/Documents/ContractManagementApp/csvimportdialog.cpp || cmake_object_order_depends_target_ContractManagementApp
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ContractManagementApp.dir\csvimportdialog.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Ahmed Attafi/Documents/ContractManagementApp/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ContractManagementApp_autogen/include" -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui -isystem C:/Qt/6.9.0/mingw_64/include/QtSql -isystem C:/Qt/6.9.0/mingw_64/include/QtCharts -isystem C:/Qt/6.9.0/mingw_64/include/QtOpenGL -isystem C:/Qt/6.9.0/mingw_64/include/QtOpenGLWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtPrintSupport -isystem C:/Qt/6.9.0/mingw_64/include/QtNetwork
+  OBJECT_DIR = CMakeFiles\ContractManagementApp.dir
+  OBJECT_FILE_DIR = CMakeFiles\ContractManagementApp.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ContractManagementApp
@@ -113,7 +129,7 @@ build CMakeFiles/ContractManagementApp.dir/chatbotmanager.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable ContractManagementApp.exe
 
-build ContractManagementApp.exe: CXX_EXECUTABLE_LINKER__ContractManagementApp_Debug CMakeFiles/ContractManagementApp.dir/ContractManagementApp_autogen/mocs_compilation.cpp.obj CMakeFiles/ContractManagementApp.dir/main.cpp.obj CMakeFiles/ContractManagementApp.dir/mainwindow.cpp.obj CMakeFiles/ContractManagementApp.dir/statisticsdialog.cpp.obj CMakeFiles/ContractManagementApp.dir/databasemanager.cpp.obj CMakeFiles/ContractManagementApp.dir/chatwindow.cpp.obj CMakeFiles/ContractManagementApp.dir/chatbotmanager.cpp.obj | C$:/Qt/6.9.0/mingw_64/lib/libQt6Sql.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Charts.a C$:/Qt/6.9.0/mingw_64/lib/libQt6PrintSupport.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Network.a C$:/Qt/6.9.0/mingw_64/lib/libQt6OpenGLWidgets.a C$:/Qt/6.9.0/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.9.0/mingw_64/lib/libQt6EntryPoint.a || ContractManagementApp_autogen ContractManagementApp_autogen_timestamp_deps
+build ContractManagementApp.exe: CXX_EXECUTABLE_LINKER__ContractManagementApp_Debug CMakeFiles/ContractManagementApp.dir/ContractManagementApp_autogen/mocs_compilation.cpp.obj CMakeFiles/ContractManagementApp.dir/main.cpp.obj CMakeFiles/ContractManagementApp.dir/mainwindow.cpp.obj CMakeFiles/ContractManagementApp.dir/statisticsdialog.cpp.obj CMakeFiles/ContractManagementApp.dir/databasemanager.cpp.obj CMakeFiles/ContractManagementApp.dir/chatwindow.cpp.obj CMakeFiles/ContractManagementApp.dir/chatbotmanager.cpp.obj CMakeFiles/ContractManagementApp.dir/chatbotdialog.cpp.obj CMakeFiles/ContractManagementApp.dir/csvimportdialog.cpp.obj | C$:/Qt/6.9.0/mingw_64/lib/libQt6Sql.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Charts.a C$:/Qt/6.9.0/mingw_64/lib/libQt6PrintSupport.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Network.a C$:/Qt/6.9.0/mingw_64/lib/libQt6OpenGLWidgets.a C$:/Qt/6.9.0/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.9.0/mingw_64/lib/libQt6EntryPoint.a || ContractManagementApp_autogen ContractManagementApp_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.9.0/mingw_64/lib/libQt6Sql.a  C:/Qt/6.9.0/mingw_64/lib/libQt6Charts.a  C:/Qt/6.9.0/mingw_64/lib/libQt6PrintSupport.a  C:/Qt/6.9.0/mingw_64/lib/libQt6Network.a  C:/Qt/6.9.0/mingw_64/lib/libQt6OpenGLWidgets.a  C:/Qt/6.9.0/mingw_64/lib/libQt6OpenGL.a  -luser32  C:/Qt/6.9.0/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.9.0/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lcomdlg32  -lwinspool  C:/Qt/6.9.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.9.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
