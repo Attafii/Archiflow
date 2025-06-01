@@ -1,44 +1,56 @@
-# Archiflow
-ArchiFlow – A modern desktop application for architects to seamlessly access, visualize, and annotate digital blueprints. Built with C++ and Qt by DesignX.
-# ArchiFLow
-ArchiFlow – A modern desktop application for architects to seamlessly access, visualize, and annotate digital blueprints. Built with C++ and Qt by DesignX.
+# Gestion des Projets - Documentation
 
+## Description
+Gestion des Projets est une application Qt C++ simple pour la gestion des projets d'architecture. Elle permet de suivre les projets, d'estimer leur durée et de gérer toutes les informations associées.
 
-# 🏛️ ArchiFlow by DesignX
+## Fonctionnalités
+- **CRUD complet** : Ajout, modification, suppression et consultation des projets
+- **Recherche et Tri** : Filtrage par nom, catégorie, dates et tri selon différents critères
+- **Suivi du projet** : Suivi de la progression et des délais
+- **Estimation automatique** : Calcul de la durée approximative du projet selon sa catégorie et sa complexité
 
-**ArchiFlow** is a modern, intuitive desktop application built for architects and design professionals to visualize, manage, and annotate their architectural plans and CAD documents. Developed with C++ and Qt, this software offers a seamless and offline-capable experience tailored for use in interactive kiosks or personal workstations.
+## Structure du projet
+- **src/** : Fichiers source C++
+- **include/** : Fichiers d'en-tête
+- **forms/** : Fichiers UI Qt Designer
+- **resources/** : Ressources (styles)
 
----
+## Modèle de données
+Chaque projet contient les attributs suivants :
+- ID projet
+- Nom
+- Catégorie
+- Date de début
+- Date de fin estimée
+- Progression
 
-## 🚀 Features
+## Interface utilisateur
+L'application utilise un thème bleu moderne et une interface entièrement en français.
 
-- 📂 Load architectural plans from a local database
-- ✍️ Annotate directly on blueprints (drawings, highlights)
-- 🖱️ Interactive interface: zoom, pan, reset view
-- 🔐 Data privacy and offline functionality
-- 🎯 Built for kiosk-like environments and professional use
+## Ouverture du projet
+### Avec Qt Creator et CMake
+1. Lancez Qt Creator
+2. Sélectionnez "Fichier" > "Ouvrir fichier ou projet"
+3. Naviguez jusqu'au dossier du projet et sélectionnez le fichier "CMakeLists.txt"
+4. Cliquez sur "Ouvrir"
+5. Configurez le projet pour votre kit de développement Qt 6
 
----
+### Compilation et exécution
+1. Configurez le projet pour votre kit de développement
+2. Cliquez sur le bouton "Exécuter" (triangle vert) ou appuyez sur Ctrl+R
 
-## 🛠️ Built With
+## Compilation avec CMake en ligne de commande
+```
+mkdir build
+cd build
+cmake ..
+make
+```
 
-- **Language**: C++
-- **Framework**: Qt (Widgets and GUI)
-- **IDE**: Qt Creator / Visual Studio Code
-- **Platform**: Desktop (Linux, Windows)
+## Dépendances
+- Qt 6.x
+- Modules Qt requis : Core, Gui, Widgets, Network
 
----
-
-## 📦 Installation
-
-### Prerequisites
-
-- Qt 6.x or higher
-- CMake (if not using Qt Creator)
-- C++ Compiler (e.g., g++, MSVC)
-
-### Clone the Repo
-
-```bash
-git clone https://github.com/designx-team/archiflow.git
-cd archiflow
+## Remarques
+- Cette application est une version simplifiée, conçue pour être facile à utiliser et à maintenir
+- L'interface est intuitive et permet une gestion efficace des projets d'architecture

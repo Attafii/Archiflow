@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/GestionDesProjets_autogen",
+	"CMAKE_BINARY_DIR" : "S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project",
+	"CMAKE_SOURCE_DIR" : "S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/GestionDesProjets_autogen/include",
+	"INPUTS" : 
+	[
+		"S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project/resources/styles/blue_theme.qss"
+	],
+	"LOCK_FILE" : "S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/GestionDesProjets_autogen.dir/AutoRcc_resources_3YJK5W5UP7_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "3YJK5W5UP7",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.9.0/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/GestionDesProjets_autogen.dir/AutoRcc_resources_3YJK5W5UP7_Used.txt",
+	"SOURCE" : "S:/Uni/AL2_SLEAM2/Mission_Entreprise/ArchiFlow/architect_app_project/resources/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}
