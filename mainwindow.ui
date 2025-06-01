@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Client Form</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QMainWindow {
+      background-color: white;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+    QLineEdit, QTextEdit {
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 14px;
+      padding: 0 0 2px 0;
+      border: none;
+      border-bottom: 1px solid #bbb;
+      border-radius: 0;
+      background: transparent;
+      outline: none;
+    }
+    QLineEdit:focus, QTextEdit:focus {
+      border-bottom: 1px solid #0078d7;
+    }
+    QPushButton#submitButton {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 0;
+      font-weight: bold;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    QPushButton#submitButton:hover {
+      background-color: #0063b1;
+    }
+    QWebEngineView {
+      background-color:rgb(180, 180, 180);
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="formLayout">
+      <item>
+       <widget class="QLabel" name="titleLabel">
+        <property name="styleSheet">
+         <string notr="true">
+          font-size: 40px;
+          font-weight: bold;
+          margin-bottom: 20px;
+         </string>
+        </property>
+        <property name="text">
+         <string>Client Form</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="inputLayout">
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="clientNameEdit">
+          <property name="placeholderText">
+           <string>Client Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="projectNameEdit">
+          <property name="placeholderText">
+           <string>Project Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="locationEdit">
+          <property name="placeholderText">
+           <string>Location</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="postcodeEdit">
+          <property name="placeholderText">
+           <string>Postcode</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="contactPhoneEdit">
+          <property name="placeholderText">
+           <string>Contact Phone</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="emailEdit">
+          <property name="placeholderText">
+           <string>E-mail</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="serviceAreaEdit">
+          <property name="placeholderText">
+           <string>Surface Area</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QTextEdit" name="descriptionEdit">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="placeholderText">
+           <string>Project Description</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QPushButton" name="submitButton">
+          <property name="text">
+           <string>SUBMIT</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWebEngineView" name="mapView" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>400</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>
+        QWebEngineView {
+          background-color:rgb(180, 180, 180);
+          background-repeat: no-repeat;
+          background-position: center;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+        }
+       </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header>QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
