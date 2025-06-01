@@ -1,0 +1,26 @@
+# CMake generated files
+build/
+CMakeLists.txt.user
+
+# Qt Creator generated files
+*.pro.user
+*.pro.user.*
+
+# Compiled object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.app
+
+# Libraries
+*.dll
+*.so
+*.dylib
+
+# Databases
+*.db
+
+# Other
+.DS_Store
