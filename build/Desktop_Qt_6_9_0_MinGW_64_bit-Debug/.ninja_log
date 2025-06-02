@@ -1,0 +1,17 @@
+# ninja log v6
+30	5063	7679641181962780	InvoiceApp_autogen/timestamp	5457d9b314dcf12d
+30	5063	7679641181962780	InvoiceApp_autogen/mocs_compilation.cpp	5457d9b314dcf12d
+30	5063	7679641181962780	C:/Users/mohhidri/Desktop/qt aman/Creating a Qt Application with C++ and SQL (4)/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/InvoiceApp_autogen/timestamp	5457d9b314dcf12d
+30	5063	7679641181962780	C:/Users/mohhidri/Desktop/qt aman/Creating a Qt Application with C++ and SQL (4)/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/InvoiceApp_autogen/mocs_compilation.cpp	5457d9b314dcf12d
+5168	19174	7679641187227351	CMakeFiles/InvoiceApp.dir/main.cpp.obj	5746ca0ed4d62648
+5230	20019	7679641187853876	CMakeFiles/InvoiceApp.dir/mainwindow.cpp.obj	f791ee8ae670e6c4
+5105	19228	7679641186610613	CMakeFiles/InvoiceApp.dir/InvoiceApp_autogen/mocs_compilation.cpp.obj	91f25c09c8661d00
+20020	21122	7679641335005578	InvoiceApp.exe	44c9bad9682e6b86
+23	4265	7691767741416394	InvoiceApp_autogen/timestamp	7292206021eb970b
+23	4265	7691767741416394	InvoiceApp_autogen/mocs_compilation.cpp	7292206021eb970b
+23	4265	7691767741416394	C:/Users/mohhidri/Desktop/qt aman/Creating a Qt Application with C++ and SQL (4)/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/InvoiceApp_autogen/timestamp	7292206021eb970b
+23	4265	7691767741416394	C:/Users/mohhidri/Desktop/qt aman/Creating a Qt Application with C++ and SQL (4)/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/InvoiceApp_autogen/mocs_compilation.cpp	7292206021eb970b
+4309	12787	7691767745006465	CMakeFiles/InvoiceApp.dir/main.cpp.obj	34c97e6c185d1da7
+4270	12869	7691767744606899	CMakeFiles/InvoiceApp.dir/InvoiceApp_autogen/mocs_compilation.cpp.obj	91f25c09c8661d00
+4376	13547	7691767745676488	CMakeFiles/InvoiceApp.dir/mainwindow.cpp.obj	7f537685f67877aa
+13552	14545	7691767837423667	InvoiceApp.exe	44c9bad9682e6b86
