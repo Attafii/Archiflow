@@ -1,0 +1,44 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureSettings": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_PREFIX_PATH": "C:/Qt/6.9.0/mingw_64",
+        "CMAKE_MAKE_PROGRAM": "C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe",
+        "CMAKE_C_COMPILER": "C:/Qt/Tools/mingw1310_64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "C:/Qt/Tools/mingw1310_64/bin/g++.exe"
+    },
+    "cmake.defaultVariants": {
+        "buildType": {
+            "default": "Debug",
+            "choices": {
+                "Debug": {
+                    "short": "Debug",
+                    "long": "Emit debug information",
+                    "buildType": "Debug"
+                },
+                "Release": {
+                    "short": "Release",
+                    "long": "Optimize generated code",
+                    "buildType": "Release"
+                },
+                "RelWithDebInfo": {
+                    "short": "RelWithDebInfo",
+                    "long": "Release with debug information",
+                    "buildType": "RelWithDebInfo"
+                },
+                "MinSizeRel": {
+                    "short": "MinSizeRel",
+                    "long": "Optimize for smallest binary size",
+                    "buildType": "MinSizeRel"
+                }
+            }
+        }
+    },
+    "cmake.buildTask": true,
+    "cmake.generator": "MinGW Makefiles",
+    "files.associations": {
+        "*.qss": "css",
+        "text_encoding": "cpp",
+        "typeinfo": "cpp"
+    }
+}

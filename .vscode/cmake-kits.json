@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Qt MinGW 64-bit",
+        "compilers": {
+            "C": "C:/Qt/Tools/mingw1310_64/bin/gcc.exe",
+            "CXX": "C:/Qt/Tools/mingw1310_64/bin/g++.exe"
+        },
+        "preferredGenerator": {
+            "name": "MinGW Makefiles"
+        },
+        "environmentVariables": {
+            "CMAKE_PREFIX_PATH": "C:/Qt/6.9.0/mingw_64",
+            "CMAKE_MAKE_PROGRAM": "C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe"
+        }
+    }
+]

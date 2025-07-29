@@ -1,0 +1,56 @@
+/* Simple Dark Theme Test */
+
+* {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+QWidget {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+QMainWindow {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+MaterialWidget {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+QTableView {
+    background-color: #222222 !important;
+    color: #ffffff !important;
+    alternate-background-color: #333333 !important;
+    gridline-color: #555555 !important;
+}
+
+QHeaderView::section {
+    background-color: #444444 !important;
+    color: #ffffff !important;
+}
+
+QLineEdit, QTextEdit, QComboBox, QSpinBox, QDoubleSpinBox {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    border: 1px solid #555555 !important;
+}
+
+QPushButton {
+    background-color: #444444 !important;
+    color: #ffffff !important;
+    border: 1px solid #666666 !important;
+    padding: 6px 12px;
+}
+
+QLabel {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+QFrame {
+    background-color: #222222 !important;
+    color: #ffffff !important;
+}

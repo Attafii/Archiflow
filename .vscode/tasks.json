@@ -1,0 +1,58 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Configure CMake",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"-S",
+				".",
+				"-B",
+				"build",
+				"-DCMAKE_BUILD_TYPE=Debug",
+				"-DCMAKE_PREFIX_PATH=C:/Qt/6.9.0/mingw_64",
+				"-G",
+				"MinGW Makefiles"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Configure CMake with Debug build type"
+		},
+		{
+			"label": "Build ArchiFlow",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"build",
+				"--config",
+				"Debug"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"dependsOn": "Configure CMake",
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"isBackground": false,
+			"detail": "Build ArchiFlow Application in Debug mode"
+		},
+		{
+			"label": "Clean Build",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"build",
+				"--target",
+				"clean"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Clean build artifacts"
+		}
+	]
+}

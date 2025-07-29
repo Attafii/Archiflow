@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug ArchiFlow",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/ArchiFlow_Application.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}/build",
+            "preLaunchTask": "Build ArchiFlow"
+        }
+    ]
+}

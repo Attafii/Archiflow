@@ -1,0 +1,11 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/icons">
+        <file>icons/ArchiFlow.svg</file>
+        <file>icons/a.png</file>
+        <file>icons/ArchiFlow (1).png</file>
+    </qresource>
+    <qresource prefix="/styles">
+        <file>styles/main.qss</file>
+    </qresource>
+</RCC>
